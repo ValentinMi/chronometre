@@ -6,10 +6,8 @@ loadBtn.addEventListener("click",loading);
 
 var listContent =  document.querySelector("#timelist");
 
-var time = localStorage.getItem(input.value);
-
-
 function loading(player){
+    var time = localStorage.getItem(input.value);
     player = input.value;
     // We create the div container
    var card = document.createElement("div");
@@ -29,6 +27,7 @@ function loading(player){
    card.appendChild(timeList);
    // We push the list's elements in list
    timeList.innerHTML = time;
+   input.value = "";
 }
 }
 export default loading;

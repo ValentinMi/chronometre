@@ -1,5 +1,4 @@
 function chronometre(){
-var startTime = 0;
 var start = 0;
 var end = 0;
 var diff = 0;
@@ -106,13 +105,21 @@ function saveLastTime(){
 }
 
 function saveTimesLocalStorage(){
-	localStorage.setItem(listName.value, timeList.innerHTML);
-	window.location.reload();
+	
+	if (timeList.getElementsByTagName('li').length == 0){
+		window.alert("Empty time list");
+	}
+	else{
+		localStorage.setItem(listName.value, timeList.innerHTML);
+		listName.value = "";
+		timeList.innerHTML = "";
+	}
 }
 
 function resetTimesList(){
 	localStorage.removeItem(listName.value);
-	window.location.reload();
+	listName.value = "";
+	timeList.innerHTML = "";
 }
 }
 
