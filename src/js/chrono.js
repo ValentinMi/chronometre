@@ -109,6 +109,9 @@ function saveTimesLocalStorage(){
 	if (timeList.getElementsByTagName('li').length == 0){
 		window.alert("Empty time list");
 	}
+	else if (listName.value = ""){
+		window.alert("Empty name input");
+	}
 	else{
 		localStorage.setItem(listName.value, timeList.innerHTML);
 		listName.value = "";
