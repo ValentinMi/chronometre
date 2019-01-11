@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    background-color: #91342D;
+}
+
+.content{
+    height: 10vh;
+    width: 100%;
+    background: #91342D;
+    display: flex;
+    justify-content: center;
+}
+
+.content2{
+    height: 50vh;
+    width: 100%;
+    background: #91342D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsection{
+    display: flex;
+    max-width: 60vw;
+    justify-content: space-around;
+    height: 7vh;
+    margin-top: 3%;
+    width: 60vw
+}
+
+.buttonsection .btn{
+    background-color: white;
+}
+
+#savebtn{
+    height: 7vh;
+    align-self: center;
+    background: black;
+    color: white;
+}
+
+#savebtn:hover{
+    background:#91342D;
+}
+
+.my-photo {
+    width: 100%;
+    margin: 0%;
+    background-attachment: fixed;
+}
+
+.my-container{
+    display: flex;
+    background: white;
+    justify-content: space-between;
+}
+
+.my-logo {
+    height: 15vh;
+    width: 15vh;
+    margin-left: 5%;
+}
+
+.last_time{
+    margin-right: 5%;
+    text-align: center;
+}
+
+.last_time p{
+    margin: 0;
+    margin-top: 5%;
+}
+
+
+#last_time{
+    background: black;
+    color: white;
+}
+
+.my-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.my-img{
+    height: 75vh;
+    max-width: 90%;
+    margin-top: 10%;
+}
+
+.my-image p{
+    height: 4vh;
+    margin: 0;
+    position: relative;
+    bottom: 28%;
+    font-size: 1.3em;
+}
+
+.tableaucntn{
+    background:#91342D;
+    padding-bottom: 5%;
+}
+
+.tableau{
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.savedtime{
+    text-align: start;
+}
+
+.tableau h4{
+    padding: 5%;
+}
+
+.tableau .btn{
+    background: black;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.tableau .btn:hover{
+    background: #91342D;
+}
+
+.print{
+    height: 7vh;
+    padding: 2%;
+}
+
+ol{
+    padding-left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#printbtn{
+    background: white;
+    width: 20%;
+    margin-left: 40%;
+    border: none;
+}
+
+#printbtn:hover{
+    cursor: pointer;
+}
+
+@media print{
+    .mycontainer,.my-photo,.my-img,.btn,input,.last_time,.my-logo,.my-image,.content,.my-image p,.saveList,.tableau button{
+        display: none;
+    }
+    h4{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+    li{
+        font-size: 2em;
+    }
+}

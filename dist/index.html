@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chrono</title>
+    <link rel="stylesheet" href="assets/app.css">
+    <script type="text/javascript" src="assets/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <img class="my-photo" src="img/chronopiste.jpg">
+            </div>
+            <div class="row my-container">
+                <img class="my-logo" src="img/damier.png">
+                <button class="btn" id="savebtn">Save</button>
+                <div class="last_time">
+                    <p>Dernier temps</p>
+                    <p id="last_time">0:00:00:00</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="buttonsection">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="stop">Stop</button>
+            <button class="btn" id="reset">Reset</button>
+        </div>
+    </div>
+    <div class="content2 my-image">
+        <img class="my-img" src="img/chrono.png">
+        <p id="chronotime">0:00:00:00</p>
+    </div>
+
+    <div class="container-fluid tableaucntn">
+        <div class="container tableau">
+            <h4>Mes temps sauvegardés</h4>
+            <button id="printbtn"><img class="print" src="img/print.png"></button>
+            <ol id="timelist">
+
+            </ol>
+
+            <div class="saveList">
+                <span>List name:</span>
+                <input id="listname_input">
+
+            </div>
+            <div class="btnlist">
+                <button class="btn" id="save_list_btn">Save</button>
+                <button class='btn' id="load_list_btn">Load</button>
+                <button class="btn" id="reset_list_btn">Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
