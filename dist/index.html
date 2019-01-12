@@ -42,20 +42,19 @@
         <div class="container tableau">
             <h4>Mes temps sauvegardés</h4>
             <button id="printbtn"><img class="print" src="img/print.png"></button>
-            <ol id="timelist">
+            <ol id="load_container" class="container"></ol>
+            <ol id="timelist"> </ol>
 
-            </ol>
+                <div class="saveList">
+                    <span>List name:</span>
+                    <input id="listname_input">
 
-            <div class="saveList">
-                <span>List name:</span>
-                <input id="listname_input">
-
-            </div>
-            <div class="btnlist">
-                <button class="btn" id="save_list_btn">Save</button>
-                <button class='btn' id="load_list_btn">Load</button>
-                <button class="btn" id="reset_list_btn">Reset</button>
-            </div>
+                </div>
+                <div class="btnlist">
+                    <button class="btn" id="save_list_btn">Save</button>
+                    <button class='btn' id="load_list_btn">Load</button>
+                    <button class="btn" id="reset_list_btn">Reset</button>
+                </div>
         </div>
 
     </div>

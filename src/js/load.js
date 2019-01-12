@@ -3,7 +3,7 @@ function loading(){
 var loadBtn = document.querySelector("#load_list_btn");
 loadBtn.addEventListener("click",loading_player);
 
-var listContent =  document.querySelector("#timelist");
+var loadContent =  document.querySelector("#load_container");
 
 function loading_player(player){
     
@@ -19,7 +19,7 @@ function loading_player(player){
        var card = document.createElement("div");
        card.className = "card";
        card.id = "card" + player;
-       listContent.appendChild(card);
+       loadContent.appendChild(card);
        // We create the name content
        var name = document.createElement("h3");
        name.className = "name";
