@@ -109,13 +109,13 @@ function saveTimesLocalStorage(){
 	if (timeList.getElementsByTagName('li').length == 0){
 		alert("Empty time list");
 	}
-	else if (listName.value = ""){
-		alert("Empty name input");
+	else if (listName.value == ""){
+		alert("Empty input champ");
 	}
 	else{
 		localStorage.setItem(listName.value, timeList.innerHTML);
-		listName.value = "";
 		timeList.innerHTML = "";
+		listName.value = "";
 	}
 }
 
