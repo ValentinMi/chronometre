@@ -13,7 +13,7 @@ function loading_player(player){
         alert("Empty input champ");
     }
     else {
-        var time = localStorage.getItem(input.value);
+        var time = localStorage.getItem(`time${input.value}`);
         player = input.value;
         // We create the div container
        var card = document.createElement("div");

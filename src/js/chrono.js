@@ -113,14 +113,16 @@ function saveTimesLocalStorage(){
 		alert("Empty input champ");
 	}
 	else{
-		localStorage.setItem(listName.value, timeList.innerHTML);
+		localStorage.setItem(`name${listName.value}`, listName.value)
+		localStorage.setItem(`time${listName.value}`, timeList.innerHTML);
 		timeList.innerHTML = "";
 		listName.value = "";
 	}
 }
 
 function resetTimesList(){
-	localStorage.removeItem(listName.value);
+	localStorage.removeItem(`name${listName.value}`);
+	localStorage.removeItem(`time${listName.value}`);
 	listName.value = "";
 	timeList.innerHTML = "";
 }
