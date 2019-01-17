@@ -169,3 +169,11 @@ ol{
         font-size: 2em;
     }
 }
+
+@media (min-width: 992px) {
+
+    #chronotime{
+        margin-top: 2%;
+    }
+
+}
